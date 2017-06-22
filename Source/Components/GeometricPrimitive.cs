@@ -27,7 +27,7 @@ using tainicom.Aether.MonoGame;
 
 namespace tainicom.Aether.PrimitivesLib.Components
 {
-    abstract public class GeometricPrimitive: IInitializable, IPhoton, ILepton, IBoundingBox, IAetherSerialization
+    abstract public class GeometricPrimitive: IInitializable, IPhoton, ILepton, IWorldTransform, IWorldTransformUpdateable, IBoundingBox, IAetherSerialization
     {
         // During the process of constructing a primitive model, vertex
         // and index data is stored on the CPU in these managed lists.
@@ -121,7 +121,6 @@ namespace tainicom.Aether.PrimitivesLib.Components
         }
         
 
-
         #region Implement IPhoton
 
         public void Accept(IGeometryVisitor geometryVisitor)
@@ -135,6 +134,7 @@ namespace tainicom.Aether.PrimitivesLib.Components
         public ITexture[] Textures { get; set; }
 
         #endregion
+
 
         #region Implement ILepton
         protected Matrix _localTransform = Matrix.Identity;
@@ -168,13 +168,31 @@ namespace tainicom.Aether.PrimitivesLib.Components
             _localTransform = Matrix.CreateScale(_scale)
                             * Matrix.CreateFromQuaternion(_rotation) 
                             * Matrix.CreateTranslation(_position);
+
+            _worldTransform = _parentWorldTransform * _localTransform;
         }
         #endregion
         
+
+        #region  Implement IWorldTransform
+        Matrix _parentWorldTransform = Matrix.Identity;
+        Matrix _worldTransform = Matrix.Identity;
+        public void UpdateWorldTransform(IWorldTransform parentWorldTransform) 
+        {
+            _parentWorldTransform = parentWorldTransform.WorldTransform;
+            _worldTransform = _parentWorldTransform * _localTransform;
+        }
+
+        public Matrix WorldTransform { get { return _worldTransform; } }
+
+        #endregion
+
+
         public virtual BoundingBox GetBoundingBox()
         {
             return _bb;
         }
+
 
         #region Implement IAetherSerialization
         public void Save(IAetherWriter writer)
