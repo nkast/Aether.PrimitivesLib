@@ -61,6 +61,9 @@ namespace tainicom.Aether.PrimitivesLib
             //cameras
             AddLibraryItem(typeof(tainicom.Aether.Core.Cameras.PerspectiveCamera));
 
+            // Plasmas
+            AddLibraryItem(typeof(tainicom.Aether.Core.LeptonPlasma));
+
             _items.Sort(CompareLibraryItemDescription);
             return;
         }
