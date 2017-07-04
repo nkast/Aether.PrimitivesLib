@@ -169,7 +169,7 @@ namespace tainicom.Aether.PrimitivesLib.Components
                             * Matrix.CreateFromQuaternion(_rotation) 
                             * Matrix.CreateTranslation(_position);
 
-            _worldTransform = _parentWorldTransform * _localTransform;
+            _worldTransform = _localTransform * _parentWorldTransform;
         }
         #endregion
         
@@ -180,7 +180,7 @@ namespace tainicom.Aether.PrimitivesLib.Components
         public void UpdateWorldTransform(IWorldTransform parentWorldTransform) 
         {
             _parentWorldTransform = parentWorldTransform.WorldTransform;
-            _worldTransform = _parentWorldTransform * _localTransform;
+            _worldTransform = _localTransform * _parentWorldTransform;
         }
 
         public Matrix WorldTransform { get { return _worldTransform; } }
