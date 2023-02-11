@@ -14,7 +14,7 @@
 //   limitations under the License.
 #endregion
 
-namespace tainicom.Aether.PrimitivesLib 
+namespace nkast.Aether.PrimitivesLib 
 {
     public partial class PrimitivesLibrary
     {

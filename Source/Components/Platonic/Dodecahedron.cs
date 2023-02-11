@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.PrimitivesLib.Components.Platonic
+namespace nkast.Aether.PrimitivesLib.Components.Platonic
 {
     // Dodecahedron (Air) / Cube
     class Dodecahedron : GeometricPrimitive

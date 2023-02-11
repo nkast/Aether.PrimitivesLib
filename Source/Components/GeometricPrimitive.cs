@@ -19,15 +19,15 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using tainicom.Aether.Elementary;
-using tainicom.Aether.Elementary.Leptons;
-using tainicom.Aether.Elementary.Photons;
+using tainicom.Aether.Elementary.Spatial;
+using tainicom.Aether.Elementary.Visual;
 using tainicom.Aether.Elementary.Serialization;
 using tainicom.Aether.Engine;
 using tainicom.Aether.MonoGame;
 
-namespace tainicom.Aether.PrimitivesLib.Components
+namespace nkast.Aether.PrimitivesLib.Components
 {
-    abstract public class GeometricPrimitive: IInitializable, IPhoton, ILepton, IWorldTransform, IWorldTransformUpdateable, IBoundingBox, IAetherSerialization
+    abstract public class GeometricPrimitive: IInitializable, IVisual, ISpatial, IWorldTransform, IWorldTransformUpdateable, IBoundingBox, IAetherSerialization
     {
         // During the process of constructing a primitive model, vertex
         // and index data is stored on the CPU in these managed lists.

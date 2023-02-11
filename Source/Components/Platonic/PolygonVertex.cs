@@ -17,7 +17,7 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.PrimitivesLib.Components
+namespace nkast.Aether.PrimitivesLib.Components
 {
     class PolygonVertex
     {

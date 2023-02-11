@@ -8,8 +8,8 @@
     <ProjectGuid>{62E4835F-DC0E-44BA-A349-BA6A23709F3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.PrimitivesLib</RootNamespace>
-    <AssemblyName>tainicom.Aether.PrimitivesLib</AssemblyName>
+    <RootNamespace>nkast.Aether.PrimitivesLib</RootNamespace>
+    <AssemblyName>Aether.PrimitivesLib</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>

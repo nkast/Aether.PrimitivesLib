@@ -17,7 +17,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace tainicom.Aether.PrimitivesLib.Components
+namespace nkast.Aether.PrimitivesLib.Components
 {
     /// <summary>
     /// Custom vertex type for vertices that have just a

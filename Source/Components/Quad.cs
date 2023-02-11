@@ -16,7 +16,7 @@
 
 using Microsoft.Xna.Framework;
 
-namespace tainicom.Aether.PrimitivesLib.Components.Platonic
+namespace nkast.Aether.PrimitivesLib.Components.Platonic
 {
     public class Quad: GeometricPrimitive
     {

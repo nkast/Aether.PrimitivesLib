@@ -8,8 +8,8 @@
     <ProjectGuid>{C380164B-5B60-4ACA-9AA8-F31EDE9231C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>tainicom.Aether.PrimitivesLib</RootNamespace>
-    <AssemblyName>tainicom.Aether.PrimitivesLib</AssemblyName>
+    <RootNamespace>nkast.Aether.PrimitivesLib</RootNamespace>
+    <AssemblyName>Aether.PrimitivesLib</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\TableEditor\TableEditor\bin\Debug\Windows.XNA\Modules\tainicom.Aether.PrimitivesLib\</OutputPath>
+    <OutputPath>..\..\TableEditor\TableEditor\bin\Debug\Windows.XNA\Modules\Aether.PrimitivesLib\</OutputPath>
     <DefineConstants>TRACE;DEBUG;WINDOWS</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,7 +26,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\TableEditor\TableEditor\bin\Release\Windows.XNA\Modules\tainicom.Aether.PrimitivesLib\</OutputPath>
+    <OutputPath>..\..\TableEditor\TableEditor\bin\Release\Windows.XNA\Modules\Aether.PrimitivesLib\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

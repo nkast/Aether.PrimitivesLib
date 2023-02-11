@@ -17,11 +17,11 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using tainicom.Aether.PrimitivesLib.Components.Platonic;
-using tainicom.Aether.PrimitivesLib.Materials;
+using nkast.Aether.PrimitivesLib.Components.Platonic;
+using nkast.Aether.PrimitivesLib.Materials;
 using tainicom.ProtonType.Contracts;
 
-namespace tainicom.Aether.PrimitivesLib 
+namespace nkast.Aether.PrimitivesLib 
 {
     public partial class PrimitivesLibrary : IContentLibrary
     {
